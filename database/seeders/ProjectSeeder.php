@@ -83,8 +83,8 @@ class ProjectSeeder extends Seeder
             [
                 'image' => 'images/project/project-image04.jpg',
                 'category' => 'Video',
-                'title' => 'Ultimate HealthCare',
-                'slug' => 'ultimate-healthCare',
+                'title' => 'Ultimate Health Care',
+                'slug' => 'ultimate-health-care',
                 'content' => $content_data,
             ]
         ];
