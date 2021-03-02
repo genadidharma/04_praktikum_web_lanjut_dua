@@ -20,7 +20,7 @@ class ProjectSeeder extends Seeder
     
                 <div class="col-lg-6 col-md-6 col-12 mb-5">
     
-                    <img src="/images/project/project-detail/personal-website.png class="img-fluid" alt="personal website" data-aos="fade-up">
+                    <img src="/images/project/project-detail/personal-website.png" class="img-fluid" alt="personal website" data-aos="fade-up">
                   </div>
     
                   <div class="col-lg-5 col-md-6 mr-lg-auto mt-lg-5 col-12" data-aos="fade-up" data-aos-delay="200">
@@ -49,7 +49,7 @@ class ProjectSeeder extends Seeder
                   <h3>Curabitur egestas mollis tellus sit amet porttitor. Sed leo nisl, posuere at molestie ac, suscipit auctor mauris. Etiam quis metus elementum, tempor risus vel.</h3>
     
                   <div class="d-flex align-items-center mt-3">
-                    <img src="/images/project/project-detail/male-avatar.png"" class="img-fluid" alt="male avatar">
+                    <img src="/images/project/project-detail/male-avatar.png" class="img-fluid" alt="male avatar">
     
                     <p>Angelo Sharp, Creative Director</p>
                   </div>

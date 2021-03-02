@@ -13,4 +13,9 @@ class Project extends Model
         return Project::orderBy('category')
             ->get();
     }
+
+    public static function getProjectBySlug($slug){
+        return Project::where('slug', $slug)
+            ->first();
+    }
 }

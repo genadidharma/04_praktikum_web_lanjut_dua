@@ -75,7 +75,7 @@
                                              <small>{{$project->category}}</small>
 
                                              <h3>
-                                                  <a href="{{route('projectDetail')}}">
+                                                  <a href="{{ route('projectDetail', ['slug' => $project->slug] ) }}">
                                                        <span>{{$project->category}}</span>
                                                        <i class="fa fa-angle-right project-icon"></i>
                                                   </a>
