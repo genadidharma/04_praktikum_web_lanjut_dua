@@ -14,13 +14,15 @@ class BlogsSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('blogs')->insert([
-            'title' => 'The Key to Creative Work is Knowing When to Walk Away',
-            'slug' => 'the-key-to-creative-work-is-knowing-when-to-walk-away',
-            'category' => 'CREATIVE',
-            'image' => 'images/blog/blog-header-image.jpg',
+        DB::table('blogs')->insert(
+        [
+            'title' => 'Judul 3',
+            'slug' => 'judul-3',
+            'category' => 'LIFESTYLE',
+            'image' => 'images/blog/blog-sidebar-image01.jpg',
             'content' => '',
             'draft' => 0
-            ]);
+            ]
+        );
     }
 }

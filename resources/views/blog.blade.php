@@ -13,25 +13,25 @@
 
               <div class="col-lg-7 col-md-7 col-12 mb-4">
                 <div class="blog-header" data-aos="fade-up" data-aos-delay="100">
-                  <img src="{{asset('images/blog/blog-header-image.jpg')}}" class="img-fluid" alt="blog header">
+                  <img src="{{asset($header->image)}}" class="img-fluid" alt="blog header">
 
                   <div class="blog-header-info">
-                    <h4 class="blog-category text-info">Creative</h4>
+                    <h4 class="blog-category text-info">{{$header->category}}</h4>
 
-                    <h3><a href="{{route('blogDetail')}}">The Key to Creative Work is Knowing When to Walk Away</a></h3>
+                    <h3><a href="{{route('blogDetail')}}">{{$header->title}}</a></h3>
                   </div>
                 </div>
               </div>
 
               <div class="col-lg-5 col-md-5 col-12 mb-4">
-                @foreach ($blogs as $blog)
+                @foreach ($side_blogs as $blog)
                   <div class="blog-sidebar d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
                     <img src="{{asset($blog->image)}}" class="img-fluid" alt="blog">
 
                     <div class="blog-info">
                       <h4 class="blog-category text-danger">{{$blog->category}}</h4>
 
-                      <h3><a href="{{route('blogDetail', ['slug' => $blog->slug])}}">{{$blog->title}}</a></h3>
+                      <h3> <a href="{{route('blogDetail', ['slug' => $blog->slug])}}">{{$blog->title}}</a></h3>
                     </div>
                   </div>
                 @endforeach
