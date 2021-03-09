@@ -16,6 +16,6 @@ class Blogs extends Model
 
     public static function getBlogBySlug($slug) {
         return Blogs::where('slug', $slug)
-            ->first();
+            ->first(); 
     }
 }
